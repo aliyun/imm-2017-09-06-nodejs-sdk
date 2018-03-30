@@ -6,8 +6,6 @@
 npm i aliyun-imm-node-sdk
 ```
 
-* 目前还是内部版本，还未对外开放。
-
 ## Usage
 
 Using node.js:
@@ -35,7 +33,9 @@ try{
 ```
 
 In browser IMM is a global variable.
-```js
+```html
+<script src="dist/aliyun-imm-node-sdk.js"></script>
+<script>
 var client = new IMM({
   endpoint:'http://imm.cn-shanghai.aliyuncs.com',
   accessKeyId: 'your_app_key_id',
@@ -47,6 +47,7 @@ client.ListProjects().then(function(result){
 }, function(err){
   console.log(err)
 });
+</script>
 ```
 
 
