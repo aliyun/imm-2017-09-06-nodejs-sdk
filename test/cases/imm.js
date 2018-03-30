@@ -14,9 +14,7 @@ describe('imm', function(){
   this.timeout(10000)
   it('#ListProjects', async ()=>{
     var client = getClient();
-    var result = await client.listProjects({
-      Action: 'ListProjects'
-    });
+    var result = await client.listProjects();
     result.should.have.property('Projects')
   })
 })

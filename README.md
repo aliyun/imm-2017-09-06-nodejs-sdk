@@ -22,7 +22,6 @@ var client = new IMM({
 
 try{
   var params = {
-    Action: 'ListProjects',
     MaxKeys: 10,
     Marker: ''
   };
@@ -39,7 +38,6 @@ You can also use original `client.request` directly:
 
 ```js
 var params = {
-  Action: 'ListProjects',
   Marker: '',
   MaxKeys: 10
 };
