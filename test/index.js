@@ -1,5 +1,4 @@
-
-global.IMM = require('../')
+global.RPCClient = require('@alicloud/pop-core').RPCClient;
 require('mocha')
 require('should')
 
